@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../fotos/logo.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Entrega</title>
+</head>
+
+<body>
+    <header class="cabeza">
+        <img src="../fotos/logo.jpg" alt="logo de marca" class="fotoLogo">
+        <!-- comienzo del navegador -->
+        <nav class="navBar">
+
+            <ul class="list">
+                <li class="listItem">
+                    <a href="../index.html"><input type="button" value="inicio"></a>
+                </li>
+                <li>
+                    <a href="./productos.html"><input type="button" value="Productos"></a>
+                    <ul class="list">
+                        <li class="listItem">
+                            <input type="button" value="Remeras">
+                            <input type="button" value="camperas">
+                            <input type="button" value="Pantalones">
+                            <input type="button" value="Bags">
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="./galeria.html"><input type="button" value="Galeria"></a>
+                    <ul class="list">
+                        <li class="listItem">
+                            <input type="button" value="Fotos">
+                            <input type="button" value="Videos">
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./nosotros.html"><input type="button" value="Nosotros"></a>
+                </li>
+                <li>
+                    <a href="./contacto.html"><input type="button" value="Contacto"></a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+    </header>
+    <!-- banner de la pagina -->
+    <img src="../fotos/banner.png" alt="banner" id="banner">
+
+    <hr>
+    <main>
+        <!-- inicio del contenido de la pagina -->
+        <section>
+            <article>
+
+                <h1>Registrate</h1>
+                <div class="registrate">
+
+                    <form action="#" method="get"></form>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre">
+
+                    <br><br>
+                    <input type="number" name="Edad" placeholder="Edad">
+
+                    <br><br>
+                    <input type="email" name="Email" placeholder="Email">
+
+                    <br><br>
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass">
+                    <br><br>
+
+                    <span>Hombre</span>
+                    <input type="radio" name="sexo" value="Mujer">
+                    <span>Mujer</span>
+                    <input type="radio" name="sexo" value="Hombre">
+                    <br><br>
+
+                    <span>Acepta términos y condiciones</span>
+                    <input type="checkbox" name="acepta" value="si" required>
+                    <br>
+
+                    <input type="submit" value="Registrarme" >
+                    <input type="reset" value="reset">
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+
+    <!-- inicio del footer -->
+    <footer class="footer">
+        <img src="../fotos/logo.jpg" alt="logo" class="footerFoto">
+        <a href="https://www.instagram.com/trg_uy/" class="redesSociales">Instagram</a>
+    </footer>
+
+</body>
+
+</html>
