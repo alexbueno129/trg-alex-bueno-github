@@ -1,5 +1,3 @@
-/* mobile last */
-
 /* paleta de colores 
 #071013
 #2385D3
@@ -17,7 +15,7 @@
 }
 
 h1 {
-    background-color: rgba(171, 217, 243, 255);
+    background-image: linear-gradient(to right, white, rgba(171, 217, 243, 255) );
     border: black 6px solid;
     font-size: 50px;
 }
@@ -27,11 +25,15 @@ h2 {
     padding: 3px;
 }
 
-.cabeza {
+/* header */
+
+ .cabeza {
     background-color: rgba(171, 217, 243, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .cabeza img {
@@ -77,19 +79,42 @@ h2 {
 .footer a:hover {
     color: #75ABBC;
     font-weight: bold;
-}
+} 
 
-.fotosGrid {
-    max-width: 850px;
-    margin: 0 auto;
+
+
+/* fotos de galeria grid */
+
+.fotosGrid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(1, 1fr);
     align-items: center;
-    justify-items: center;
-    justify-content: center;
-    grid-row-gap: 15px;
+    align-content: center;
 
 }
+
+.fotosGrid1 img {
+    width: 50%;
+
+}
+
+/* fotos del index */
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.fotos img {
+    width: 300px;
+    margin-left: 15px;
+}
+
+/* eventos del index */
 
 .evento2 {
     display: inline-block;
@@ -111,167 +136,112 @@ h2 {
 
 .eventos {
     background-color: bisque;
-    padding: 0px;
+    padding: 20px;
     margin: 0px;
+
 }
 
-.videos{
+.videos {
     background-color: rgba(255, 228, 196, 0.61);
+
+}
+
+/* que somos? */
+
+.queSomos{
+    display: inline-block;
+    background-color: bisque
+}
+
+.queSomos p{
+    background-color:rgba(171, 217, 243, 255); 
+    text-align: center;
+
+}
+
+/* hoja de contacto */
+
+.registrate{
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    
+
+}
+
+.registrateForm{
+    display: inline-block;
+    background-color: rgba(171, 217, 243, 255);
+    width: 417px;
+    height: 361px;
+    padding: 36px;
+    margin: 20px;
+}
+
+
+
+/* productos */
+
+.productosGrid ul li{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    
+}
+    
+
+
+.productosGrid img{
+    width: 20%;
+    margin-left: 15px;
    
 }
 
+
+
+
+/* footer */
 .footer {
     background-color: #071013;
-   
+
 }
 
-.footer a{
+.footer a {
     margin: 15px;
     width: 15%;
     position: relative;
     font-size: 24px
 }
 
-.footer img{
+.footer img {
     width: 250px;
     padding: 15px;
-   
+
 }
 
-
+/* banner */
 
 #banner {
     width: 100%;
+    
 }
 
 
 
-
-
-    @media screen and (max-width:1920px) {
-        .cabeza {
-            flex-direction: column;
-        }
-
-        .cabeza img {
-            width: 150px;
-        }
-
-        .cabeza li {
-            margin: 48px;
-        }
-
-        .footer ul {
-            width: 182px;
-        }
+@media (max-width: 961px){
+    .cabeza{
+        flex-direction: column;
+        background-color: rgba(171, 217, 243, 255);
         
-        .footer img{
-            width: 250px;
-            padding: 15px;
-           
-        }
-
-        .fotosGrid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
+    }
+    .cabeza img {
+        width: 200px;
+        padding: 10px;
+        
+    
     }
 
-    @media screen and (max-width: 1280px) {
-        .cabeza {
-            flex-direction: column;
-        }
-
-        .cabeza img {
-            width: 150px;
-        }
-        .cabeza li {
-            margin: 48px;
-        }
-
-
-        .footer ul {
-            width: 182px;
-        }
-        
-        .footer img{
-            width: 250px;
-            padding: 15px;
-           
-        }
-
-        .fotosGrid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-    } 
-
-  
-   
-
-    @media screen and (max-width: 768px) {
-        .cabeza {
-            flex-direction: column;
-        }
-
-        .cabeza img {
-            width: 150px;
-        }
-
-        .cabeza li {
-            margin: 48px;
-        }
-
-        .footer ul {
-            width: 140px;
-        }
-        
-        .footer img{
-            width: 250px;
-            padding: 15px;
-           
-        }
-
-        .fotosGrid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }    
-
     
-
-  
-    @media screen and (max-width: 400px) {
-        .cabeza {
-            flex-direction: column;
-        }
-
-        .cabeza img {
-            width: 150px;
-        }
-
-        .cabeza li {
-            margin: 48px;
-        }
-
-        .footer ul {
-            width: 182px;
-        }
-        
-        .footer img{
-            width: 250px;
-            padding: 15px;
-           
-        }
-
-        .fotosGrid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-    } 
-        
-    
-
-
-
-
-
+}
