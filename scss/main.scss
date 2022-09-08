@@ -1,9 +1,14 @@
-/* paleta de colores */
+/* paleta de colores- variables*/
+
 $colors-black: #071013;
 $colors-dark-blue: #2385d3;
 $colors-light-blue: #75abbc;
 $colors-gray: #a2aebb;
 $colors-white: #dfe0e2;
+
+
+
+
 
 * {
     margin: 0;
@@ -74,6 +79,7 @@ h2 {
     a {
         color: $colors-white;
         text-decoration: none;
+
     }
 }
 
@@ -122,9 +128,9 @@ h2 {
 
 .evento {
     display: inline-block;
-    background-color: #abd9f3;
     max-width: 500px;
     padding: 36px;
+    @extend %eventoParrafo;
 }
 
 .eventos {
@@ -151,6 +157,7 @@ h2 {
     p {
         background-color: #abd9f3;
         text-align: center;
+        
     }
 }
 
@@ -171,6 +178,7 @@ h2 {
     gap: 1rem;
     max-width: 450px;
     margin: 0 auto;
+    @include registrateForm;
 
     fieldgroup {
         display: flex;
@@ -204,6 +212,7 @@ h2 {
         max-width: 1200px;
 
         padding: 24px;
+
         li {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -236,6 +245,20 @@ h2 {
         padding: 15px;
     }
 }
+
+/* extend */
+%eventoParrafo{
+    font-size: 18px;
+    background-color: $colors-dark-blue;
+}
+
+
+/* mixin */
+@mixin registrateForm {
+    text-transform: uppercase;
+    
+}
+
 
 /* banner */
 #banner {
